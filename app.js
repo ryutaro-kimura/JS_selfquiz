@@ -65,6 +65,7 @@ const clickHandler = (e) => {
     if (quiz[quizIndex].correct === e.target.textContent) {
         window.alert('正解');
         score++;
+    //　ネタ仕込み
     } else if (quiz[0].answers[0] === e.target.textContent) {
         window.alert('カカロットォ！って、やかましいわ！')
     } else if (quiz[0].answers[1] === e.target.textContent) {
@@ -73,6 +74,7 @@ const clickHandler = (e) => {
         window.alert('ぶっ殺すぞ！')
     }　else if(quiz[2].answers[0] === e.target.textContent){
         window.alert('やりらふぃ〜！')
+    // めんどくなってやめた
     }else {
         window.alert('不正解');
     }
